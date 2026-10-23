@@ -40,7 +40,7 @@ RATE_LIMIT_RETRIES=3
 
 die() { echo "yt: $1" >&2; exit "${2:-2}"; }
 note() { echo "yt: $1" >&2; }
-usage() { sed -n '2,35p' "$0" | sed 's/^# \{0,1\}//'; }
+usage() { sed -n '2,32p' "$0" | sed 's/^# \{0,1\}//'; }
 
 KEYS=()      # the pool, deduplicated, in configured order
 ORDER=()     # indexes into KEYS, shuffled once per run
