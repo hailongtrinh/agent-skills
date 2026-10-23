@@ -22,6 +22,8 @@ as a header, follows pagination and turns API errors into one clear line.
 
 Docs: https://developers.google.com/youtube/v3/docs
 
+Requirements: `bash`, `curl`, `jq`.
+
 ## Setup (once, by a person)
 
 1. In [Google Cloud Console](https://console.cloud.google.com/), create or
@@ -37,8 +39,6 @@ Docs: https://developers.google.com/youtube/v3/docs
      `env.YOUTUBE_API_KEYS`. An `access.YOUTUBE_API_KEYS` binding also works,
      because the script fetches it on demand.
    - **Elsewhere:** `export YOUTUBE_API_KEYS=KEY1,KEY2`
-
-Requirements: `bash`, `curl`, `jq`.
 
 **Never print, echo, log or paste a key.** Do not put one in a URL (`key=…`)
 either. The script refuses that and sends the header itself. In messages, refer
